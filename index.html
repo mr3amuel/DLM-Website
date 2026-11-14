@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7faff" />
+  <meta name="description" content="DLM 0.1.0 is a free download manager for macOS 13+ on Apple Silicon and Intel. Download the latest release from GitHub." />
+  <meta property="og:title" content="DLM — Downloads, under control." />
+  <meta property="og:description" content="DLM 0.1.0 for macOS is available now. Free official downloads for Apple Silicon and Intel." />
+  <meta property="og:type" content="website" />
+  <title>DLM — Downloads, under control.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header shell">
+    <a href="#home" class="brand" aria-label="DLM home">
+      <svg class="brand-mark" viewBox="0 0 64 48" aria-hidden="true"><path d="M2 3h15l20 21-20 21H2l20-21z" fill="#19a9e5"/><path d="M24 3h15l20 21-20 21H24l20-21z" fill="#0867d9"/></svg>
+      <span class="brand-name">DLM<span class="brand-sub">DOWNLOAD MANAGER</span></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation"><a href="#features" data-i18n="navFeatures">Features</a><a href="#platforms" data-i18n="navPlatforms">Platforms</a><a href="#about" data-i18n="navAbout">About</a></nav>
+    <div class="header-actions"><button id="lang-switch" class="language language-pill" type="button" aria-label="Switch website language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg><span class="lang-label">FA</span></button><a class="header-cta" href="#download" data-i18n="navGet">Get DLM <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main id="home">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="badge">AVAILABLE FOR macOS · VERSION 0.1.0</span></div>
+        <h1 data-i18n-html="heroTitle">Downloads,<br><em>under control.</em></h1>
+        <p class="hero-description" data-i18n="heroDesc">Keep every download in view and every decision in your hands. Pause and resume transfers, organize files, set priorities, and plan downloads—all in one native Mac app.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#download"><span data-i18n="heroButton">Download for macOS</span><span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#features" data-i18n="discover">See what’s inside ↓</a></div>
+        <div class="hero-note"><span class="check">✓</span><span data-i18n="heroNote">Free to download and use. No subscription required.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Screenshot of the released DLM macOS app">
+        <div class="product-showcase product-showcase-image">
+          <img src="dlm-swiftui-preview.png" alt="DLM 0.1.0 for macOS — real SwiftUI download manager interface" width="1930" height="1174" loading="eager" decoding="async">
+        </div>
+        <div class="preview-caption"><span class="caption-dot"></span><span data-i18n="screenshotCaption">Actual DLM 0.1.0 interface</span></div>
+      </div>
+    </section>
+    <section class="trust-strip shell" aria-label="Highlights"><div><span class="trust-icon">↯</span><span data-i18n="trustOne">Priorities & queues</span></div><div><span class="trust-icon">◷</span><span data-i18n="trustTwo">Scheduled downloads</span></div><div><span class="trust-icon">⟳</span><span data-i18n="trustThree">Pause & resume</span></div><div><span class="trust-icon">◇</span><span data-i18n="trustFour">Native macOS app</span></div></section>
+    <section id="features" class="features-section shell"><div class="section-heading"><div class="section-tag" data-i18n="featuresTag">EVERYDAY DOWNLOADS, BETTER ORGANIZED</div><h2 data-i18n-html="featuresTitle">Everything in place.<br><em>Nothing in the way.</em></h2></div><div class="feature-grid">
+      <article class="feature-card"><div class="feature-symbol">⇶</div><h3 data-i18n="feature1Title">Set what matters first</h3><p data-i18n="feature1Desc">Organize transfers into a queue and assign priorities, so important downloads get your attention first.</p><div class="feature-art art-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></article>
+      <article class="feature-card"><div class="feature-symbol">◷</div><h3 data-i18n="feature2Title">Make time work for you</h3><p data-i18n="feature2Desc">Schedule transfers for a time that suits you, and manage your download activity from one clear workspace.</p><div class="feature-art art-clock"><div class="clock-ring"><div class="clock-face"><span class="clock-hand-hour"></span><span class="clock-hand-minute"></span><span class="clock-pin"></span></div></div><div class="clock-label">02:00 AM <span>●</span></div></div></article>
+      <article class="feature-card"><div class="feature-symbol">⟳</div><h3 data-i18n="feature3Title">Stay in control of progress</h3><p data-i18n="feature3Desc">See progress and status at a glance. Pause a transfer and resume it when the server supports continuing downloads.</p><div class="feature-art art-recover"><div class="recover-line"><span></span><span></span><span></span><span></span><span></span></div><small>68% <span>↗</span></small></div></article>
+    </div></section>
+    <section id="platforms" class="platform-section shell"><div class="platform-panel"><div class="platform-heading"><div class="section-tag" data-i18n="platformTag">AVAILABILITY</div><h2 data-i18n-html="platformTitle">Made for Mac.<br><em>Ready to download.</em></h2><p data-i18n="platformDesc">A native SwiftUI/AppKit interface powered by a Rust download engine. Available for macOS 13+ on Apple Silicon and Intel.</p></div><div class="platform-list"><div class="platform-row"><div class="os-icon">⌘</div><div><strong>macOS</strong><small data-i18n="macNote">Apple Silicon and Intel · macOS 13+</small></div><span class="status" data-i18n="statusDevelopment">Available now</span></div><div class="platform-row"><div class="os-icon windows">⊞</div><div><strong>Windows</strong><small data-i18n="winNote">Desktop release planned</small></div><span class="status status-muted" data-i18n="statusPlanned">Planned</span></div><div class="platform-row"><div class="os-icon linux">⌘</div><div><strong>Linux</strong><small data-i18n="linuxNote">Desktop release planned</small></div><span class="status status-muted" data-i18n="statusPlanned2">Planned</span></div></div></div></section>
+
+    <section id="download" class="download-section shell" aria-labelledby="download-title">
+      <div class="section-tag" data-i18n="downloadTag">OFFICIAL macOS DOWNLOAD</div>
+      <h2 id="download-title" data-i18n="downloadTitle">Get DLM for your Mac.</h2>
+      <p class="download-lead" data-i18n="downloadLead">Free to download and use, with dedicated installers for Apple Silicon and Intel Macs. Requires macOS 13 or later.</p>
+      <div id="platform-hint" class="platform-hint" role="status" aria-live="polite" hidden></div>
+      <div class="release-status" aria-live="polite"><span class="pulse"></span><span data-i18n="releaseLabel">Latest release:</span> <strong id="release-version">v0.1.0</strong></div>
+      <div class="download-grid">
+        <a id="download-arm64" class="download-choice" href="https://github.com/mr3amuel/DLM/releases/latest" rel="noopener noreferrer"><span class="download-chip">M</span><span><strong data-i18n="armTitle">Apple Silicon</strong><small data-i18n="armSub">Mac with M-series chip</small><em data-i18n="downloadAction">Download DMG ↗</em></span></a>
+        <a id="download-intel" class="download-choice" href="https://github.com/mr3amuel/DLM/releases/latest" rel="noopener noreferrer"><span class="download-chip intel-chip">Intel</span><span><strong data-i18n="intelTitle">Intel Mac</strong><small data-i18n="intelSub">Mac with Intel processor</small><em data-i18n="downloadAction2">Download DMG ↗</em></span></a>
+      </div>
+      <div class="download-links"><a id="release-page" href="https://github.com/mr3amuel/DLM/releases/latest" rel="noopener noreferrer" data-i18n="releaseNotes">Release notes & checksums ↗</a><a href="https://github.com/mr3amuel/DLM" rel="noopener noreferrer" data-i18n="sourceLink">Source repository ↗</a></div>
+      <div class="install-notice"><strong data-i18n="installTitle">Important installation note</strong><p data-i18n="installBody">This release is ad-hoc signed and is not notarized by Apple. macOS may block its first launch. After reviewing the app, you may be able to allow it under System Settings → Privacy & Security → Open Anyway. Do not disable Gatekeeper globally. Downloads run while DLM is open.</p><a href="https://support.apple.com/102445" target="_blank" rel="noopener noreferrer" data-i18n="appleGuide">Apple's installation guidance ↗</a></div>
+    </section>
+    <section id="about" class="closing shell"><div class="closing-orbit" aria-hidden="true"></div><div class="section-tag" data-i18n="aboutTag">DESIGNED AROUND THE DETAILS</div><h2 data-i18n-html="aboutTitle">A clearer way to<br><em>manage what matters.</em></h2><p data-i18n="aboutDesc">From categories and search to queue priorities, scheduling, and optional browser integration, DLM brings practical download tools together in a focused Mac experience.</p><div class="closing-note" data-i18n="aboutNote">Official macOS downloads are free to use. Source code is viewable under proprietary terms.</div></section>
+  </main>
+  <footer class="footer shell"><div class="footer-brand"><svg viewBox="0 0 64 48" aria-hidden="true"><path d="M2 3h15l20 21-20 21H2l20-21z" fill="#19a9e5"/><path d="M24 3h15l20 21-20 21H24l20-21z" fill="#0867d9"/></svg><strong>DLM</strong></div><span data-i18n="footer">Made with care. © 2026 DLM.</span><a href="#home" data-i18n="backTop">Back to top ↑</a></footer>
+</body>
+</html>
